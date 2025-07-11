@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="tilt">
+    <div class="img">
+      <img src="{{product?.image}}" alt="image" routerLink="/detail/{{product?.id}}" />
+    </div>
+  </div>
+  <div class="info">
+    <div class="cat">{{product?.category}}</div>
+    <h2 class="title">{{product?.title}}</h2>
+    <p class="desc">
+      {{product?.description}}
+    </p>
+    <div class="bottom">
+      <div class="price">
+        <span class="new">{{product?.price | currency}} </span>
+      </div>
+    </div>
+  </div>
+</div>

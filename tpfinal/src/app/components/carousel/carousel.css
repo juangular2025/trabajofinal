@@ -1,0 +1,17 @@
+.flexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 90%;
+    height: auto;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.flexContainer div {
+    width: 320px;
+    height: 418px;
+    margin: 10px;
+}

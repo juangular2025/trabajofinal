@@ -1,0 +1,68 @@
+<div class="centrado">
+    <div class="container">
+        <div class="form">
+            <form (ngSubmit)="submitContactForm()" [formGroup]="contactForm">
+                <label for="nombre">Nombre</label><br />
+                <input type="text" id="nombre" name="nombre" value="" formControlName="nombre" />
+
+                @if(contactForm.get('nombre')?.errors && contactForm.get('nombre')?.dirty) {
+                @if (contactForm.get('nombre')?.hasError('required')) {
+                <div class="error">Requerido</div>
+                }
+                }
+
+                <br />
+
+                <label for="apellido">Apellido</label><br />
+                <input type="text" id="apellido" name="apellido" value="" formControlName="apellido" />
+
+                @if(contactForm.get('apellido')?.errors && contactForm.get('apellido')?.dirty) {
+                @if (contactForm.get('apellido')?.hasError('required')) {
+                <div class="error">Requerido</div>
+                }
+                }
+
+                <br />
+
+                <label for="telefono">Telefono</label><br />
+                <input type="text" id="telefono" name="telefono" value="" formControlName="telefono" />
+
+                <br />
+
+                <label for="email">Correo</label><br />
+                <input type="text" id="email" name="email" value="" formControlName="email" />
+
+                @if(contactForm.get('email')?.errors && contactForm.get('email')?.dirty) {
+                @if (contactForm.get('email')?.hasError('required')) {
+                <div class="error">Requerido</div>
+                }
+
+                @if (contactForm.get('email')?.hasError('email')) {
+                <div class="error">Correo incorrecto</div>
+                }
+                }
+
+                <br />
+                <br />
+
+                <input type="submit" value="Aceptar" [disabled]="!contactForm.valid" />
+            </form>
+        </div>
+        <div class="info">
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQG-iFCQc0diHg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1712757708338?e=1757548800&v=beta&t=8_SJgSYB0pn5yiRk46pQ5lTTuU9OQoJwd5BdLiqvIbU"
+                    alt="Juan" style="width:30%">
+
+                <h2>Juan Villarreal</h2>
+                <h3 class="title">Desarrollador Angular</h3>
+                <p>Centro de e-Learning</p>
+                <p>UTN.BA</p>
+                <a href="https://www.linkedin.com/in/juanfranciscovillarreal/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

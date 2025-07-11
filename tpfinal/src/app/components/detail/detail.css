@@ -1,0 +1,110 @@
+.flex-main {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-menu {
+    display: flex;
+    justify-content: left;
+    height: 2vh;
+    margin-top: 1em;
+    width: 80%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    height: 50vh;
+    padding: 15px;
+    gap: 5px;
+    width: 80%;
+}
+
+.flex-container>div {
+    padding: 8px;
+}
+
+.item1 {
+    flex-basis: 65%;
+    border: 3px solid #ababab;
+    display: flex;
+    justify-content: center;
+}
+
+.item2 {
+    flex-basis: 30%;
+    border-radius: 15px;
+    border: 3px solid #ababab;
+}
+
+.title {
+    font-family: Proxima Nova, -apple-system, Roboto, Arial, sans-serif;
+    font-size: 26px;
+}
+
+
+.price{
+    font-family: Proxima Nova,-apple-system,Roboto,Arial,sans-serif;
+    font-size: 40px;
+}
+
+.nav-menu {
+    margin: 0;
+    height: 100%
+}
+
+.nav-menu .nav-menu-list {
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap
+}
+
+.nav-menu .nav-menu-list .nav-menu-item {
+    display: flex;
+    align-items: flex-end;
+    height: 28px;
+    margin-right: 15px
+}
+
+.nav-menu .nav-menu-list .nav-menu-item:last-child {
+    margin-right: 0
+}
+
+.nav-menu-item {
+    line-height: 18px;
+    font-size: 14px
+}
+
+.nav-menu-item a {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, .8980392157);
+    transition: color .3s ease-out;
+    font-weight: 400
+}
+
+.nav-menu-item a:link,
+.nav-menu-item a:visited {
+    color: rgba(0, 0, 0, .8980392157)
+}
+
+.nav-menu-item a:hover,
+.nav-menu-item a:active,
+.nav-menu-item a:focus {
+    color: rgba(51, 51, 51, .9);
+    text-decoration: none
+}
+
+.nav-menu-item a.nav-menu-item-link {
+    position: relative
+}
+
+.nav-menu-item a.nav-menu-item-link .nav-link-tag {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 85%
+}

@@ -1,0 +1,19 @@
+<div class="flex-main">
+    <div class="flex-menu">
+        <a routerLink="/home" class="nav-menu-item-link" rel="">Volver</a>
+    </div>
+</div>
+
+<div class="flex-main">
+    <div class="flex-container">
+        <div class="item1">
+            <img src="{{product?.image}}">
+        </div>
+        <div class="item2">
+            <h1 class="title">{{product?.title}}</h1>
+            <span class="price">{{product?.price | currency}} </span>
+            <h3>Descripción</h3>
+            <span class="description">{{product?.description}} </span>
+        </div>
+    </div>
+</div>

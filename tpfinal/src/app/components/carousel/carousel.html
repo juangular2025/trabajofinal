@@ -1,0 +1,14 @@
+@if(loading){
+<div class="contenedor">
+    <div class="mensaje"></div>
+</div>
+}
+@else {
+<div class='flexContainer'>
+    @for (product of products; track product) {
+    <div>
+        <app-product [product]="product"/>
+    </div>
+    }
+</div>
+}
